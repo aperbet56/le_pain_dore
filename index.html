@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Pain Doré | Boulangerie Artisanale & Biologique</title>
+    <meta
+      name="description"
+      content="Découvrez Le Pain Doré, votre boulangerie artisanale bio. Des pains au levain naturel, des ingrédients locaux et une cuisson traditionnelle pour votre santé."
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Liens Google Fonts pour une typographie moderne et chaleureuse -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lien vers les fichiers CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <header class="main-header">
+      <nav class="navbar" aria-label="Menu principal">
+        <div class="logo">
+          <a href="index.html">Le Pain <span>Doré</span></a>
+        </div>
+
+        <!-- Menu de navigation -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="nos-pains.html">Nos Pains</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Bouton d'action rapide -->
+        <div class="nav-cta">
+          <a href="#reservez" class="btn btn-primary">Réserver mon pain</a>
+        </div>
+
+        <!-- Bouton Menu Burger pour Mobile -->
+        <button class="burger-menu" id="burgerMenu" aria-label="Ouvrir le menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Héros (Hero Section) -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-content">
+            <span class="hero-badge">Artisanat 100% Biologique</span>
+            <h1>Le bon pain retrouve son histoire</h1>
+            <p>
+              Façonnés à la main et cuits chaque matin, nos pains au levain
+              naturel révèlent les saveurs authentiques de nos terroirs.
+              Redécouvrez le vrai goût de la nature.
+            </p>
+            <div class="hero-actions">
+              <a href="#reservez" class="btn btn-primary">Réserver mon pain</a>
+              <a href="contact.html" class="btn btn-secondary"
+                >Nous contacter</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <!-- Image décorative de pain artisanal croustillant -->
+            <img
+              src="img/pain-artisanal-sortant-du-four.jpg"
+              alt="Pain artisanal bio croustillant sortant du four"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Avantages & Engagements -->
+      <section class="engagements-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Pourquoi choisir Le Pain Doré ?</h2>
+            <p>
+              Nous croyons en une alimentation vivante, respectueuse de votre
+              bien-être et de la terre.
+            </p>
+          </div>
+          <div class="grid-engagements">
+            <div class="card-engagement">
+              <div class="icon">🌾</div>
+              <h3>Farines Bio & Locales</h3>
+              <p>
+                Nos céréales anciennes proviennent exclusivement de fermes
+                locales engagées en agriculture biologique.
+              </p>
+            </div>
+            <div class="card-engagement">
+              <div class="icon">⏰</div>
+              <h3>Levain Naturel</h3>
+              <p>
+                Une fermentation lente de 24 heures pour un pain plus digeste,
+                plus nutritif et qui se conserve plus longtemps.
+              </p>
+            </div>
+            <div class="card-engagement">
+              <div class="icon">❤️</div>
+              <h3>Bon pour la Santé</h3>
+              <p>
+                Zéro additif, moins de gluten et un index glycémique bas pour
+                prendre soin de votre corps au quotidien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Témoignages (Social Proof) -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Ce qu'en disent nos clients</h2>
+          </div>
+          <div class="grid-testimonials">
+            <blockquote class="testimonial-card">
+              <p class="quote">
+                "Enfin du vrai pain qui se garde plusieurs jours ! La miche au
+                levain naturel est une pure merveille. Ma digestion s'est
+                nettement améliorée depuis que j'achète ici."
+              </p>
+              <cite class="author"
+                >Marie L. —
+                <span class="location">Habitante du quartier</span></cite
+              >
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p class="quote">
+                "Le système de réservation en ligne est ultra pratique. Je passe
+                récupérer ma miche de seigle après le travail, elle m'attend
+                toute chaude sur le comptoir !"
+              </p>
+              <cite class="author"
+                >Thomas D. — <span class="location">Client fidèle</span></cite
+              >
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page (Footer) complet -->
+    <footer class="main-footer" id="contact">
+      <div class="footer-container">
+        <!-- Colonne 1 : Infos Boulangerie -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">Le Pain <span>Doré</span></div>
+          <p>
+            Votre boulangerie de quartier engagée pour une alimentation saine,
+            durable et joyeuse.
+          </p>
+        </div>
+
+        <!-- Colonne 2 : Horaires d'ouverture -->
+        <div class="footer-col hours-col">
+          <h3>Horaires d'Ouverture</h3>
+          <ul>
+            <li>
+              <span>Du Mardi au Vendredi :</span> 7h00 — 13h00 / 15h30 — 19h30
+            </li>
+            <li><span>Samedi & Dimanche :</span> 7h30 — 16h00</li>
+            <li><span>Lundi :</span> Fermé</li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Contact & Accès -->
+        <div class="footer-col contact-col">
+          <h3>Nous Trouver</h3>
+          <address>
+            <p>📍 12 Rue de la Meule, 69000 Lyon</p>
+            <p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p>
+            <p>
+              ✉️
+              <a href="mailto:contact@lepaindore.fr">contact@lepaindore.fr</a>
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <!-- Mention de copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Le Pain Doré. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Importation du fichier JavaScript pour l'interactivité -->
+    <script src="script.js"></script>
+  </body>
+</html>
