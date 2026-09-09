@@ -173,7 +173,7 @@ ul {
 }
 
 .nav-links a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
