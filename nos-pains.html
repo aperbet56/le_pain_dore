@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Pains | Le Pain Doré - Boulangerie Artisanale Bio</title>
+    <meta
+      name="description"
+      content="Découvrez notre gamme de pains artisanaux biologiques au levain naturel. Façonnés à la main avec des farines locales de haute qualité."
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Liens Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lien vers les fichiers CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/nos-pains.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation (Identique à l'accueil) -->
+    <header class="main-header">
+      <nav class="navbar" aria-label="Menu principal">
+        <div class="logo">
+          <a href="index.html">Le Pain <span>Doré</span></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="nos-pains.html" class="active">Nos Pains</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#reservez" class="btn btn-primary">Réserver mon pain</a>
+        </div>
+        <button class="burger-menu" id="burgerMenu" aria-label="Ouvrir le menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- En-tête de la page Produits -->
+      <section class="products-hero">
+        <div class="container text-center">
+          <span class="hero-badge">Notre Fournée</span>
+          <h1>Des pains vivants, pétris avec passion</h1>
+          <p class="products-intro">
+            Chaque jour, nous sélectionnons les meilleures farines locales et
+            biologiques pour vous proposer des pains au goût authentique et
+            riches en nutriments.
+          </p>
+        </div>
+      </section>
+
+      <!-- Grille des Produits -->
+      <section class="products-section">
+        <div class="container">
+          <div class="products-grid">
+            <!-- Produit 1 : La Miche Tradition -->
+            <article class="product-card fade-in-element">
+              <div class="product-image">
+                <img
+                  src="img/miche-de-pain.jpg"
+                  alt="Miche de pain au levain traditionnel"
+                />
+                <span class="product-tag">Le Best-Seller</span>
+              </div>
+              <div class="product-info">
+                <div class="product-meta">
+                  <h3>La Miche Tradition</h3>
+                  <span class="product-price">5,20 €</span>
+                </div>
+                <p class="product-description">
+                  Notre pain signature. Farine de blé T80 sur meule de pierre,
+                  levain naturel de l'exploitation et fermentation lente de 24
+                  heures. Croûte épaisse et mie alvéolée.
+                </p>
+                <div class="product-footer">
+                  <span class="product-weight">⚖️ Env. 800g</span>
+                  <button class="btn btn-primary btn-sm">Réserver</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produit 2 : Le Pavé Nordique -->
+            <article class="product-card fade-in-element">
+              <div class="product-image">
+                <img
+                  src="img/pain-noir.jpg"
+                  alt="Pain noir aux graines style nordique"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-meta">
+                  <h3>Le Pavé Nordique</h3>
+                  <span class="product-price">4,80 €</span>
+                </div>
+                <p class="product-description">
+                  Un pain noir intense et gourmand. Mélange de farines de seigle
+                  et d'épeautre, enrichi de graines de lin brun, de tournesol et
+                  de courge grillées.
+                </p>
+                <div class="product-footer">
+                  <span class="product-weight">⚖️ Env. 500g</span>
+                  <button class="btn btn-primary btn-sm">Réserver</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produit 3 : Le Petit Épeautre -->
+            <article class="product-card fade-in-element">
+              <div class="product-image">
+                <img
+                  src="img/pain-epeautre.jpg"
+                  alt="Pain pur petit épeautre bio"
+                />
+                <span class="product-tag">Faible en Gluten</span>
+              </div>
+              <div class="product-info">
+                <div class="product-meta">
+                  <h3>Le Petit Épeautre</h3>
+                  <span class="product-price">6,10 €</span>
+                </div>
+                <p class="product-description">
+                  Idéal pour les digestions sensibles. Confectionné
+                  exclusivement à partir de farine de pur petit épeautre
+                  (engrain ancestral). Une mie dense aux douces notes de
+                  noisette.
+                </p>
+                <div class="product-footer">
+                  <span class="product-weight">⚖️ Env. 600g</span>
+                  <button class="btn btn-primary btn-sm">Réserver</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produit 4 : Le Pain aux Noix & Miel -->
+            <article class="product-card fade-in-element">
+              <div class="product-image">
+                <img src="img/pain-noix-miel.jpg" alt="Pain aux noix et miel" />
+              </div>
+              <div class="product-info">
+                <div class="product-meta">
+                  <h3>Noix & Miel Local</h3>
+                  <span class="product-price">5,50 €</span>
+                </div>
+                <p class="product-description">
+                  Le compagnon idéal de vos plateaux de fromages. Notre base de
+                  pâte au levain agrémentée de généreux cerneaux de noix du
+                  Périgord et d'une touche de miel de fleurs local.
+                </p>
+                <div class="product-footer">
+                  <span class="product-weight">⚖️ Env. 400g</span>
+                  <button class="btn btn-primary btn-sm">Réserver</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page (Identique à l'accueil) -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">Le Pain <span>Doré</span></div>
+          <p>
+            Votre boulangerie de quartier engagée pour une alimentation saine,
+            durable et joyeuse.
+          </p>
+        </div>
+        <!-- Colonne 2 : Horaires d'ouverture -->
+        <div class="footer-col hours-col">
+          <h3>Horaires d'Ouverture</h3>
+          <ul>
+            <li>
+              <span>Du Mardi au Vendredi :</span> 7h00 — 13h00 / 15h30 — 19h30
+            </li>
+            <li><span>Samedi & Dimanche :</span> 7h30 — 16h00</li>
+            <li><span>Lundi :</span> Fermé</li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Contact & Accès -->
+        <div class="footer-col contact-col">
+          <h3>Nous Trouver</h3>
+          <address>
+            <p>📍 12 Rue de la Meule, 69000 Lyon</p>
+            <p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p>
+            <p>
+              ✉️
+              <a href="mailto:contact@lepaindore.fr">contact@lepaindore.fr</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Le Pain Doré. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Importation du fichier JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
