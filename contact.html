@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Accès | Le Pain Doré - Boulangerie Artisanale Bio</title>
+    <meta
+      name="description"
+      content="Contactez la boulangerie Le Pain Doré à Paris. Retrouvez nos horaires, notre adresse, notre numéro de téléphone et écrivez-nous pour toute question ou commande."
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Liens Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lien vers les fichiers CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation (Identique aux autres pages) -->
+    <header class="main-header">
+      <nav class="navbar" aria-label="Menu principal">
+        <div class="logo">
+          <a href="index.html">Le Pain <span>Doré</span></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="nos-pains.html">Nos Pains</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="nos-pains.html" class="btn btn-primary">Réserver mon pain</a>
+        </div>
+        <button class="burger-menu" id="burgerMenu" aria-label="Ouvrir le menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- En-tête de la page Contact -->
+      <section class="contact-hero">
+        <div class="container text-center">
+          <span class="hero-badge">Nous trouver & nous écrire</span>
+          <h1>Venez nous rendre visite</h1>
+          <p class="contact-intro">
+            Une question sur nos farines, une envie de commander pour un
+            événement ou simplement pour nous dire bonjour ? Notre équipe vous
+            répond avec le sourire.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section Principale : Formulaire + Infos pratiques -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Colonne 1 : Le Formulaire de contact -->
+            <div class="contact-form-container fade-in-element">
+              <h2>Envoyer un message</h2>
+              <form
+                action="#"
+                method="POST"
+                id="contactForm"
+                class="contact-form"
+              >
+                <div class="form-group">
+                  <label for="name">Votre nom</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Ex: Dupont"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="firstname">Votre prénom</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="fistname"
+                    placeholder="Ex: Jean"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Votre adresse e-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ex: jean.dupont@exemple.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Objet de votre message</label>
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected>
+                      Choisissez une option...
+                    </option>
+                    <option value="reservation">
+                      Question sur une réservation de pain
+                    </option>
+                    <option value="pro">Partenariat & Professionnels</option>
+                    <option value="autre">Autre demande</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Votre message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Écrivez votre message ici..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  Envoyer le message
+                </button>
+              </form>
+            </div>
+
+            <!-- Colonne 2 : Infos & Carte d'accès -->
+            <div class="contact-info-container fade-in-element">
+              <div class="info-block">
+                <h2>Nos coordonnées</h2>
+                <address class="contact-address">
+                  <p>
+                    <strong>📍 Adresse :</strong> 12 Rue de la Meule, 69000 Lyon
+                  </p>
+                  <p>
+                    <strong>📞 Téléphone :</strong>
+                    <a href="tel:+33472000000">04 72 00 00 00</a>
+                  </p>
+                  <p>
+                    <strong>✉️ E-mail :</strong>
+                    <a href="mailto:contact@lepaindore.fr"
+                      >contact@lepaindore.fr</a
+                    >
+                  </p>
+                </address>
+              </div>
+
+              <!-- Bloc Carte d'accès -->
+              <div class="map-wrapper">
+                <h2>Plan d'accès</h2>
+                <div class="map-placeholder">
+                  <!-- Intégration d'un plan visuel interactif propre -->
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11133.988155155597!2d4.815447205618247!3d45.76122830731799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebaaef7e7f5f%3A0x2d9cc97768f72426!2sVieux%20Lyon%2C%2069005%20Lyon!5e0!3m2!1sfr!2sfr!4v1731344440684!5m2!1sfr!2sfr"
+                    width="100%"
+                    height="250"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page (Identique aux autres pages) -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">Le Pain <span>Doré</span></div>
+          <p>
+            Votre boulangerie de quartier engagée pour une alimentation saine,
+            durable et joyeuse.
+          </p>
+        </div>
+        <!-- Colonne 2 : Horaires d'ouverture -->
+        <div class="footer-col hours-col">
+          <h3>Horaires d'Ouverture</h3>
+          <ul>
+            <li>
+              <span>Du Mardi au Vendredi :</span> 7h00 — 13h00 / 15h30 — 19h30
+            </li>
+            <li><span>Samedi & Dimanche :</span> 7h30 — 16h00</li>
+            <li><span>Lundi :</span> Fermé</li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Contact & Accès -->
+        <div class="footer-col contact-col">
+          <h3>Nous Trouver</h3>
+          <address>
+            <p>📍 12 Rue de la Meule, 69000 Lyon</p>
+            <p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p>
+            <p>
+              ✉️
+              <a href="mailto:contact@lepaindore.fr">contact@lepaindore.fr</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Le Pain Doré. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Importation du fichier JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
