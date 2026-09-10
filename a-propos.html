@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À Propos | Le Pain Doré - Notre Histoire et Nos Valeurs</title>
+    <meta
+      name="description"
+      content="Découvrez l'histoire de la boulangerie Le Pain Doré. Notre engagement pour des ingrédients bio, des farines locales et le respect du pain artisanal au levain."
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Liens Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lien vers les fichiers CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/a-propos.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation (Identique aux autres pages) -->
+    <header class="main-header">
+      <nav class="navbar" aria-label="Menu principal">
+        <div class="logo">
+          <a href="index.html">Le Pain <span>Doré</span></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="nos-pains.html">Nos Pains</a></li>
+          <li><a href="a-propos.html" class="active">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="nos-pains.html" class="btn btn-primary">Réserver mon pain</a>
+        </div>
+        <button class="burger-menu" id="burgerMenu" aria-label="Ouvrir le menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- En-tête de la page À Propos -->
+      <section class="about-hero">
+        <div class="container text-center">
+          <span class="hero-badge">Notre Histoire</span>
+          <h1>Au cœur de notre savoir-faire</h1>
+          <p class="about-intro">
+            Une aventure humaine guidée par l'amour de la terre, le respect du
+            temps et le partage des bonnes choses.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section Notre Histoire (Texte + Image croisés) -->
+      <section class="story-section">
+        <div class="container">
+          <div class="story-row fade-in-element">
+            <div class="story-content">
+              <h2>Le retour au geste véritable</h2>
+              <p>
+                Tout a commencé par un constat simple : le pain moderne avait
+                perdu son âme et ses bienfaits. En créant
+                <strong>Le Pain Doré</strong>, notre objectif était de redonner
+                ses lettres de noblesse à cet aliment millénaire.
+              </p>
+              <p>
+                Nous avons choisi de bannir les levures industrielles et les
+                additifs chimiques. Ici, chaque miche naît de la rencontre
+                simple mais magique entre de l'eau pure, de la farine biologique
+                moulue sur pierre, du sel de mer et notre levain chef, nourri
+                patiemment jour après jour.
+              </p>
+            </div>
+            <div class="story-image">
+              <img
+                src="img/petrissage.jpg"
+                alt="Pétrissage artisanal de la pâte à pain"
+              />
+            </div>
+          </div>
+
+          <div class="story-row reverse fade-in-element">
+            <div class="story-content">
+              <h2>Un engagement local et durable</h2>
+              <p>
+                Être boulanger aujourd'hui, c'est aussi être acteur de son
+                territoire. C'est pourquoi nous travaillons main dans la main
+                avec des paysans-meuniers situés à moins de 100 kilomètres de
+                notre atelier.
+              </p>
+              <p>
+                En valorisant les variétés de blés anciens (comme le petit
+                épeautre ou le seigle de pays), nous soutenons une biodiversité
+                agricole précieuse. Ces céréales rustiques, plus riches en goût
+                et naturellement plus pauvres en gluten, offrent une qualité
+                nutritionnelle incomparable pour votre santé.
+              </p>
+            </div>
+            <div class="story-image">
+              <img
+                src="img/champs-de-blé.jpg"
+                alt="Champs de blé biologique local"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Nos Chiffres / Nos Engagements -->
+      <section class="stats-section fade-in-element">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <p class="stat-label">Ingrédients certifiés Bio</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">24h</span>
+              <p class="stat-label">De fermentation minimale</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">&lt; 100km</span>
+              <p class="stat-label">Distance de nos meuniers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page (Identique aux autres pages) -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">Le Pain <span>Doré</span></div>
+          <p>
+            Votre boulangerie de quartier engagée pour une alimentation saine,
+            durable et joyeuse.
+          </p>
+        </div>
+        <!-- Colonne 2 : Horaires d'ouverture -->
+        <div class="footer-col hours-col">
+          <h3>Horaires d'Ouverture</h3>
+          <ul>
+            <li>
+              <span>Du Mardi au Vendredi :</span> 7h00 — 13h00 / 15h30 — 19h30
+            </li>
+            <li><span>Samedi & Dimanche :</span> 7h30 — 16h00</li>
+            <li><span>Lundi :</span> Fermé</li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Contact & Accès -->
+        <div class="footer-col contact-col">
+          <h3>Nous Trouver</h3>
+          <address>
+            <p>📍 12 Rue de la Meule, 69000 Lyon</p>
+            <p>📞 <a href="tel:+33472000000">04 72 00 00 00</a></p>
+            <p>
+              ✉️
+              <a href="mailto:contact@lepaindore.fr">contact@lepaindore.fr</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Le Pain Doré. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Importation du fichier JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
