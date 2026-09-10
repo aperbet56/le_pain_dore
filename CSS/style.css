@@ -35,6 +35,12 @@ ul {
     list-style-type: none;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading)
+}
+
 /**** Déclaration des variables CSS ****/
 
 :root {
@@ -52,8 +58,8 @@ ul {
     --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
 
     /* Transitions & Arrondis */
-    --transition-fast: 0.2s ease;
-    --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-lg: 24px;
@@ -76,7 +82,6 @@ ul {
 }
 
 .section-header h2 {
-    font-family: var(--font-heading);
     font-size: 2.25rem;
     color: var(--clr-secondary);
     margin-bottom: 12px;
@@ -256,7 +261,6 @@ ul {
 }
 
 .hero-content h1 {
-    font-family: var(--font-heading);
     font-size: 3.5rem;
     line-height: 1.15;
     color: var(--clr-secondary);
@@ -316,7 +320,6 @@ ul {
 }
 
 .card-engagement h3 {
-    font-family: var(--font-heading);
     color: var(--clr-secondary);
     font-size: 1.4rem;
     margin-bottom: 12px;
@@ -398,7 +401,6 @@ ul {
 
 .footer-col h3 {
     color: var(--clr-bg);
-    font-family: var(--font-heading);
     font-size: 1.2rem;
     margin-bottom: 20px;
     position: relative;
@@ -547,6 +549,4 @@ ul {
     .brand-col {
         grid-column: span 1;
     }
-
-
 }
