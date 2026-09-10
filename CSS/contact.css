@@ -62,7 +62,7 @@
 .form-group select,
 .form-group textarea {
     font-family: var(--font-body);
-    font-size: 0.95rem;
+
     padding: 12px 16px;
     border: 1px solid rgba(74, 107, 83, 0.2);
     background-color: var(--clr-bg);
@@ -78,6 +78,12 @@
     border-color: var(--clr-primary);
     box-shadow: 0 0 0 3px rgba(74, 107, 83, 0.1);
     background-color: var(--clr-surface);
+}
+
+.form-group p {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #ff5470;
 }
 
 .btn-full {
