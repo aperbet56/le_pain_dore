@@ -29,6 +29,7 @@ const lastNameValidation = (lastName) => {
     }
   });
 };
+
 // Appel de la fonction lastNameValidation
 lastNameValidation(lastName);
 
@@ -42,7 +43,7 @@ const firstNameValidation = (firstName) => {
     e.preventDefault();
     if (regexName.test(firstName.value) === false) {
       document.querySelector("#firstNameErrorMsg").textContent =
-        "Veuillez saisir un prénom valide, ex : Pierre";
+        "Veuillez saisir un prénom valide, ex : Jean";
       return false;
     } else {
       document.querySelector("#firstNameErrorMsg").textContent = " ";
@@ -50,6 +51,7 @@ const firstNameValidation = (firstName) => {
     }
   });
 };
+
 // Appel de la fonction firstNameValidation
 firstNameValidation(firstName);
 
@@ -63,7 +65,7 @@ const emailValidation = (email) => {
     e.preventDefault();
     if (regexEmail.test(email.value) === false) {
       document.querySelector("#emailErrorMsg").textContent =
-        "Veuillez saisir un email valide, ex : exemple@contact.com";
+        "Veuillez saisir un e-mail valide, ex : jean.dupont@exemple.com";
       return false;
     } else {
       document.querySelector("#emailErrorMsg").textContent = " ";
@@ -71,6 +73,7 @@ const emailValidation = (email) => {
     }
   });
 };
+
 // Appel de la fonction emailValidation
 emailValidation(email);
 
@@ -87,7 +90,7 @@ const submitForm = () => {
       select.value === "" ||
       textarea.value === ""
     ) {
-      alert("Veuillez remplir correctement tous les champs");
+      alert("Veuillez remplir correctement tous les champs du formulaire !");
     } else {
       const contact = {
         firstName: firstName.value,
